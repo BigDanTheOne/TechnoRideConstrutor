@@ -28,13 +28,11 @@ CONSTRUCTOR_TELEGRAM_BOT_API_TOKEN: str | None = os.getenv('TELEGRAM_BOT_TOKEN')
 CONSTRUCTOR_TELEGRAM_BOT_USERNAME: str | None = os.getenv('TELEGRAM_BOT_USERNAME')
 
 
-SITE_DOMAIN = 'http://127.0.0.1:8000' if DEBUG else 'https://constructor.exg1o.org'
-ALLOWED_HOSTS = ['127.0.0.1', 'constructor.exg1o.org']
+SITE_DOMAIN = 'http://127.0.0.1:8000'
+ALLOWED_HOSTS = ['127.0.0.1']
 CSRF_TRUSTED_ORIGINS = [
 	'http://*.127.0.0.1',
 	'https://*.127.0.0.1',
-	'http://constructor.exg1o.org',
-	'https://constructor.exg1o.org',
 ]
 
 
@@ -172,7 +170,6 @@ USE_L10N = True
 
 LANGUAGES = [
 	('en', _('Английский')),
-	('uk', _('Украинский')),
 	('ru', _('Русский')),
 ]
 LANGUAGE_CODE = 'ru-ru'
